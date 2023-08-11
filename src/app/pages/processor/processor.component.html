@@ -1,0 +1,60 @@
+<div class="header bg-gradient-danger pb-8 pt-5 pt-md-8">
+    <div class="container-fluid">
+        <div class="header-body">
+            <div class="col-md-12">
+    <div class="card">
+      <div class="card-header">
+        <h4 class="card-title">Prosessor</h4>
+        <button class="btn btn-default btn-sm" type="button"  routerLink="/createprocessor/add">
+            <span>Create</span>
+        </button>
+      </div>
+      <div class="card-body">
+        <div class="table-responsive">
+          <table class="table">
+            <thead class=" text-default-left">
+              <th class="card-title">
+                <b>No</b>
+              </th>
+              <th class="card-title-left">
+                <b>Prosessor</b>
+              </th>
+              <th class="card-title-right">
+                <b>Action</b>
+              </th>
+            </thead>
+            <tbody *ngFor="let d of dataProsesor; let i = index">
+                <tr>
+                    <td class="text-left">
+                        {{i+1}}
+                    </td>
+                    <td class="text-justify">
+                       {{d.nama_prosesor}}
+                    </td>
+                    <br>
+                    <div class="row">
+                      <button class="btn btn-default btn-sm" type="button" class="btn btn-default btn-sm"
+                      type="button-center"
+                      [routerLink]="'/createprocessor/'+d.id_prosesor">
+                        <span>Update</span>
+                      </button>
+                      <div>
+                        <button class="btn btn-default btn-sm"
+                        type="button-center" (click)="deleteProcessor(d.id_prosesor)">Delete</button>
+                      </div>
+                    </div>
+                    <br>
+                </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <ngx-spinner
+  bdColor="rgb(255,255,255)"
+  size="medium"
+  color="#2C318E"
+  type="ball-8bits"
+  ></ngx-spinner> 
+  

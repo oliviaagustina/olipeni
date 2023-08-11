@@ -1,0 +1,196 @@
+<div class="header bg-gradient-danger pb-8 pt-5 pt-md-8">
+    <div class="container-fluid">
+      <div class="header-body">
+        <div class="col-sm-12">
+          <div class="card card-user">
+            <div class="card-header">
+              <h3 class="card-title">
+                {{ dataset == "add"  ? "Create" : "Update" }} Data Inventory</h3>
+            </div>
+            <div class="card-body">
+              <form>
+                <div class="row">
+                  <div class="col-md-4 pr-1">
+                    <div class="formgroup">
+                    <form name="formCreateinventory" [formGroup]="formCreateinventory" novalidate>
+                        <h5>Code Asset</h5>
+                    <input matInput class="form-control" formControlName="code_aset">
+                    </form>
+                    </div>
+                  </div>
+                  <div class="col-md-4 px-1">
+                    <div class="formgroup">
+                    <form name="formCreateinventory" [formGroup]="formCreateinventory" novalidate>
+                        <h5>PIC</h5>
+                    <input matInput class="form-control" formControlName="pic">
+                    </form>
+                    </div>
+                  </div>
+                  <div class="col-md-4 pl-1">
+                    <div class="formgroup">
+                      <form name="formCreateinventory" [formGroup]="formCreateinventory" novalidate>
+                        <h5>Department</h5>
+                    <input matInput class="form-control" formControlName="departemen">
+                    </form>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-4 pr-1">
+                    <div class="formgroup">
+                      <form name="formCreateinventory" [formGroup]="formCreateinventory" novalidate>
+                        <h5>Computer Name</h5>
+                    <input matInput class="form-control" formControlName="nama_komputer">
+                    </form>
+                    </div>
+                  </div>
+                  <div class="col-md-4 px-1">
+                    <div class="formgroup">
+                      <form name="formCreateinventory" [formGroup]="formCreateinventory" novalidate>
+                        <h5>Merk</h5>
+                    <input matInput class="form-control" formControlName="nama_merk">
+                    </form>
+                    </div>
+                  </div>
+                  <div class="col-md-4 pl-1">
+                    <div class="formgroup">
+                      <form name="formCreateinventory" [formGroup]="formCreateinventory" novalidate>
+                        <h5>Series</h5>
+                    <input matInput class="form-control" formControlName="nama_series">
+                    </form>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-4 pr-1">
+                    <div class="formgroup">
+                      <form name="formCreateinventory" [formGroup]="formCreateinventory" novalidate>
+                        <h5>Category</h5>
+                    <input matInput class="form-control" formControlName="nama_kategori">
+                    </form>
+                    </div>
+                  </div>
+                  <div class="col-md-4 px-1">
+                    <div class="formgroup">
+                      <form name="formCreateinventory" [formGroup]="formCreateinventory" novalidate>
+                        <h5>Processor</h5>
+                    <input matInput class="form-control" formControlName="nama_prosesor">
+                    </form>
+                    </div>
+                  </div>
+                  <div class="col-md-4 pl-1">
+                    <div class="formgroup">
+                      <form name="formCreateinventory" [formGroup]="formCreateinventory" novalidate>
+                        <h5>RAM</h5>
+                    <input matInput class="form-control" formControlName="nama_ram">
+                    </form>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-4 pr-1">
+                    <div class="formgroup">
+                      <form name="formCreateinventory" [formGroup]="formCreateinventory" novalidate>
+                        <h5>Storage</h5>
+                    <input matInput class="form-control" formControlName="nama_storage">
+                    </form>
+                    </div>
+                  </div>
+                  <div class="col-md-4 px-1">
+                    <div class="formgroup">
+                      <form name="formCreateinventory" [formGroup]="formCreateinventory" novalidate>
+                        <h5>Location</h5>
+                    <input matInput class="form-control" formControlName="nama_lokasi">
+                    </form>
+                    </div>
+                  </div>
+                  <div class="col-md-4 pl-1">
+                    <div class="formgroup">
+                      <form name="formCreateinventory" [formGroup]="formCreateinventory" novalidate>
+                        <h5>IP DHCP</h5>
+                    <input matInput class="form-control" formControlName="ip_dhcp">
+                    </form>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-4 pr-1">
+                    <div class="formgroup">
+                      <form name="formCreateinventory" [formGroup]="formCreateinventory" novalidate>
+                        <h5>IP Static</h5>
+                    <input matInput class="form-control" formControlName="ip_static">
+                    </form>
+                    </div>
+                  </div>
+                  <div class="col-md-4 px-1">
+                    <div class="formgroup">
+                      <form name="formCreateinventory" [formGroup]="formCreateinventory" novalidate>
+                        <h5>Mac Addres</h5>
+                    <input matInput class="form-control" formControlName="mac_addres">
+                    </form>
+                    </div>
+                  </div>
+                  <div class="col-md-4 pl-1">
+                    <div class="formgroup">
+                      <form name="formCreateinventory" [formGroup]="formCreateinventory" novalidate>
+                        <h5>Serial Number</h5>
+                    <input matInput class="form-control" formControlName="serial_number">
+                    </form>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-4 pr-1">
+                    <div class="formgroup">
+                      <form name="formCreateinventory" [formGroup]="formCreateinventory" novalidate>
+                        <h5>Serial Key Windows</h5>
+                    <input matInput class="form-control" formControlName="serial_key_windows">
+                    </form>
+                    </div>
+                  </div>
+                  <div class="col-md-4 px-1">
+                    <div class="formgroup">
+                      <form name="formCreateinventory" [formGroup]="formCreateinventory" novalidate>
+                        <h5>Cost</h5>
+                    <input matInput class="form-control" formControlName="cost">
+                    </form>
+                    </div>
+                  </div>
+                  <div class="col-md-4 pl-1">
+                    <div class="formgroup">
+                      <form name="formCreateinventory" [formGroup]="formCreateinventory" novalidate>
+                        <h5>Vendor</h5>
+                    <input matInput class="form-control" formControlName="vendor">
+                    </form>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div class="col-md-4 pl-1">
+                    <div class="formgroup">
+                      <form name="formCreateinventory" [formGroup]="formCreateinventory" novalidate>
+                        <h5>Date of Purchase</h5>
+                    <input matInput class="form-control" formControlName="tanggal_beli">
+                    </form>
+                    </div>
+                  </div>
+                </div>
+                <br>
+                <button class="btn btn-default" type="button" (click)="save()">
+                  <span>Save</span>
+              </button>
+                <button class="btn btn-default" (click)="goBack()">Cancel</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<ngx-spinner
+bdColor="rgb(255,255,255)"
+size="medium"
+color="#2C318E"
+type="ball-8bits"
+></ngx-spinner>
+  

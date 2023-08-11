@@ -1,0 +1,31 @@
+<div class="header bg-gradient-danger pb-8 pt-5 pt-md-8">
+    <div class="container-fluid">
+        <div class="header-body">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div class="card card-user">
+                <div class="card-header">
+                  <h2 class="card-title">
+                    {{ dataset == "add" ? "Create" : "Update" }} Data Category</h2>
+                </div>
+                <div class="card-body">
+                    <div class="col-md-12">
+                        <form name="formCreatecategory" [formGroup]="formCreatecategory" novalidate>
+                            <h5>Category</h5>
+                        <input matInput class="form-control" formControlName="nama_kategori">
+                        <br>
+                        <button class="btn btn-default" type="button" (click)="save()">
+                            <span>Save</span>
+                        </button>
+                        <button class="btn btn-default" (click)="goBack()">Cancel</button>
+                        </form>
+                    </div>
+                </div>
+                </div> 
+            </div>
+<ngx-spinner
+bdColor="rgb(255,255,255)"
+size="medium"
+color="#2C318E"
+type="ball-8bits"
+></ngx-spinner>
+           
